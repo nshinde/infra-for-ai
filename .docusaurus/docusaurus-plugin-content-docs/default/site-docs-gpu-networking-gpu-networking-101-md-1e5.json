@@ -1,0 +1,28 @@
+{
+  "id": "gpu-networking/gpu-networking-101",
+  "title": "GPU Networking 101",
+  "description": "Modern machine learning workloads depend heavily on how GPUs talk to each other.",
+  "source": "@site/docs/gpu-networking/gpu-networking-101.md",
+  "sourceDirName": "gpu-networking",
+  "slug": "/gpu-networking/gpu-networking-101",
+  "permalink": "/infra-for-ai/docs/gpu-networking/gpu-networking-101",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/gpu-networking/gpu-networking-101.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "id": "gpu-networking-101",
+    "title": "GPU Networking 101",
+    "sidebar_label": "GPU Networking 101"
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Why Networking Matters for ML",
+    "permalink": "/infra-for-ai/docs/networking-basics/why-networking-matters"
+  },
+  "next": {
+    "title": "Distributed Training & Communication",
+    "permalink": "/infra-for-ai/docs/ml-infra/distributed-training"
+  }
+}

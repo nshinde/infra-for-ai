@@ -1,0 +1,28 @@
+{
+  "id": "career/networking-to-ml-infra",
+  "title": "Transitioning from Networking to ML Infra",
+  "description": "If you already have a background in networking or low‑level systems, you’re closer to ML infra than it may seem.",
+  "source": "@site/docs/career/networking-to-ml-infra.md",
+  "sourceDirName": "career",
+  "slug": "/career/networking-to-ml-infra",
+  "permalink": "/infra-for-ai/docs/career/networking-to-ml-infra",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/career/networking-to-ml-infra.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "id": "networking-to-ml-infra",
+    "title": "Transitioning from Networking to ML Infra",
+    "sidebar_label": "Networking → ML Infra"
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Network Metrics",
+    "permalink": "/infra-for-ai/docs/observability/network-metrics"
+  },
+  "next": {
+    "title": "ML Infra Interview Themes",
+    "permalink": "/infra-for-ai/docs/career/ml-infra-interview-themes"
+  }
+}

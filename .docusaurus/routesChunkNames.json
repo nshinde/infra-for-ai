@@ -206,62 +206,66 @@
     },
     "content": "393be207"
   },
-  "/infra-for-ai/docs-76a": {
+  "/infra-for-ai/docs-bc3": {
     "__comp": "5e95c892",
     "__context": {
       "plugin": "aba21aa0"
     }
   },
-  "/infra-for-ai/docs-340": {
+  "/infra-for-ai/docs-5a4": {
     "__comp": "a7bd4aaa",
     "__props": "985776e9"
   },
-  "/infra-for-ai/docs-d82": {
+  "/infra-for-ai/docs-726": {
     "__comp": "a94703ab"
   },
-  "/infra-for-ai/docs/category/tutorial---basics-710": {
-    "__comp": "14eb3368",
-    "__props": "a89fe6ea"
+  "/infra-for-ai/docs/career/ml-infra-interview-themes-8fd": {
+    "__comp": "17896441",
+    "content": "faba6dfe"
   },
-  "/infra-for-ai/docs/category/tutorial---extras-296": {
-    "__comp": "14eb3368",
-    "__props": "71b5e904"
+  "/infra-for-ai/docs/career/networking-to-ml-infra-3e3": {
+    "__comp": "17896441",
+    "content": "9ff406d7"
   },
-  "/infra-for-ai/docs/intro-2d4": {
+  "/infra-for-ai/docs/gpu-networking/gpu-networking-101-6ba": {
+    "__comp": "17896441",
+    "content": "1e5ececb"
+  },
+  "/infra-for-ai/docs/intro-c1a": {
     "__comp": "17896441",
     "content": "0e384e19"
   },
-  "/infra-for-ai/docs/tutorial-basics/congratulations-85f": {
+  "/infra-for-ai/docs/intro/overview-cac": {
     "__comp": "17896441",
-    "content": "822bd8ab"
+    "content": "0631c0ae"
   },
-  "/infra-for-ai/docs/tutorial-basics/create-a-blog-post-eb7": {
+  "/infra-for-ai/docs/ml-infra/distributed-training-546": {
     "__comp": "17896441",
-    "content": "533a09ca"
+    "content": "00a13476"
   },
-  "/infra-for-ai/docs/tutorial-basics/create-a-document-33c": {
+  "/infra-for-ai/docs/ml-infra/nccl-internals-414": {
     "__comp": "17896441",
-    "content": "1e4232ab"
+    "content": "a1d52c09"
   },
-  "/infra-for-ai/docs/tutorial-basics/create-a-page-290": {
+  "/infra-for-ai/docs/ml-infra/rdma-for-ml-infra-58d": {
     "__comp": "17896441",
-    "content": "5c868d36"
+    "content": "8f729155"
   },
-  "/infra-for-ai/docs/tutorial-basics/deploy-your-site-1fb": {
+  "/infra-for-ai/docs/networking-basics/why-networking-matters-481": {
     "__comp": "17896441",
-    "content": "f55d3e7a"
+    "content": "ab8f9e1c"
   },
-  "/infra-for-ai/docs/tutorial-basics/markdown-features-980": {
+  "/infra-for-ai/docs/observability/gpu-metrics-2cd": {
     "__comp": "17896441",
-    "content": "18c41134"
+    "content": "7bbaadc9"
   },
-  "/infra-for-ai/docs/tutorial-extras/manage-docs-versions-17d": {
+  "/infra-for-ai/docs/observability/network-metrics-5b9": {
     "__comp": "17896441",
-    "content": "dff1c289"
+    "content": "b3e33d0d"
   },
-  "/infra-for-ai/docs/tutorial-extras/translate-your-site-223": {
+  "/infra-for-ai/docs/observability/observability-overview-69f": {
     "__comp": "17896441",
-    "content": "e44a2883"
+    "content": "a6a06193"
   },
   "/infra-for-ai/-d65": {
     "__comp": "1df93b7f",

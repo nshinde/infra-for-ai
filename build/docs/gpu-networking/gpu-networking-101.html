@@ -1,0 +1,196 @@
+<!doctype html>
+<html lang="en" dir="ltr" class="docs-wrapper plugin-docs plugin-id-default docs-version-current docs-doc-page docs-doc-id-gpu-networking/gpu-networking-101" data-has-hydrated="false">
+<head>
+<meta charset="UTF-8">
+<meta name="generator" content="Docusaurus v3.9.2">
+<title data-rh="true">GPU Networking 101 | Infra for AI – ML Infrastructure &amp; GPU Networking</title><meta data-rh="true" name="viewport" content="width=device-width,initial-scale=1"><meta data-rh="true" name="twitter:card" content="summary_large_image"><meta data-rh="true" property="og:image" content="https://nshinde.github.io/infra-for-ai/img/docusaurus-social-card.jpg"><meta data-rh="true" name="twitter:image" content="https://nshinde.github.io/infra-for-ai/img/docusaurus-social-card.jpg"><meta data-rh="true" property="og:url" content="https://nshinde.github.io/infra-for-ai/docs/gpu-networking/gpu-networking-101"><meta data-rh="true" property="og:locale" content="en"><meta data-rh="true" name="docusaurus_locale" content="en"><meta data-rh="true" name="docsearch:language" content="en"><meta data-rh="true" name="docusaurus_version" content="current"><meta data-rh="true" name="docusaurus_tag" content="docs-default-current"><meta data-rh="true" name="docsearch:version" content="current"><meta data-rh="true" name="docsearch:docusaurus_tag" content="docs-default-current"><meta data-rh="true" property="og:title" content="GPU Networking 101 | Infra for AI – ML Infrastructure &amp; GPU Networking"><meta data-rh="true" name="description" content="Modern machine learning workloads depend heavily on how GPUs talk to each other."><meta data-rh="true" property="og:description" content="Modern machine learning workloads depend heavily on how GPUs talk to each other."><link data-rh="true" rel="canonical" href="https://nshinde.github.io/infra-for-ai/docs/gpu-networking/gpu-networking-101"><link data-rh="true" rel="alternate" href="https://nshinde.github.io/infra-for-ai/docs/gpu-networking/gpu-networking-101" hreflang="en"><link data-rh="true" rel="alternate" href="https://nshinde.github.io/infra-for-ai/docs/gpu-networking/gpu-networking-101" hreflang="x-default"><script data-rh="true" type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"GPU Networking 101","item":"https://nshinde.github.io/infra-for-ai/docs/gpu-networking/gpu-networking-101"}]}</script><link rel="alternate" type="application/rss+xml" href="/infra-for-ai/blog/rss.xml" title="Infra for AI – ML Infrastructure &amp; GPU Networking RSS Feed">
+<link rel="alternate" type="application/atom+xml" href="/infra-for-ai/blog/atom.xml" title="Infra for AI – ML Infrastructure &amp; GPU Networking Atom Feed"><link rel="stylesheet" href="/infra-for-ai/assets/css/styles.9c53a5ce.css">
+<script src="/infra-for-ai/assets/js/runtime~main.6f07a0aa.js" defer="defer"></script>
+<script src="/infra-for-ai/assets/js/main.095426b0.js" defer="defer"></script>
+</head>
+<body class="navigation-with-keyboard">
+<svg style="display: none;"><defs>
+<symbol id="theme-svg-external-link" viewBox="0 0 24 24"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"/></symbol>
+</defs></svg>
+<script>!function(){var t=function(){try{return new URLSearchParams(window.location.search).get("docusaurus-theme")}catch(t){}}()||function(){try{return window.localStorage.getItem("theme")}catch(t){}}();document.documentElement.setAttribute("data-theme",t||(window.matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light")),document.documentElement.setAttribute("data-theme-choice",t||"system")}(),function(){try{const c=new URLSearchParams(window.location.search).entries();for(var[t,e]of c)if(t.startsWith("docusaurus-data-")){var a=t.replace("docusaurus-data-","data-");document.documentElement.setAttribute(a,e)}}catch(t){}}()</script><div id="__docusaurus"><link rel="preload" as="image" href="/infra-for-ai/img/logo.svg"><div role="region" aria-label="Skip to main content"><a class="skipToContent_fXgn" href="#__docusaurus_skipToContent_fallback">Skip to main content</a></div><nav aria-label="Main" class="theme-layout-navbar navbar navbar--fixed-top"><div class="navbar__inner"><div class="theme-layout-navbar-left navbar__items"><button aria-label="Toggle navigation bar" aria-expanded="false" class="navbar__toggle clean-btn" type="button"><svg width="30" height="30" viewBox="0 0 30 30" aria-hidden="true"><path stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" d="M4 7h22M4 15h22M4 23h22"></path></svg></button><a class="navbar__brand" href="/infra-for-ai/"><div class="navbar__logo"><img src="/infra-for-ai/img/logo.svg" alt="My Site Logo" class="themedComponent_mlkZ themedComponent--light_NVdE"><img src="/infra-for-ai/img/logo.svg" alt="My Site Logo" class="themedComponent_mlkZ themedComponent--dark_xIcU"></div><b class="navbar__title text--truncate">My Site</b></a><a aria-current="page" class="navbar__item navbar__link navbar__link--active" href="/infra-for-ai/docs/intro/overview">Tutorial</a><a class="navbar__item navbar__link" href="/infra-for-ai/blog">Blog</a></div><div class="theme-layout-navbar-right navbar__items navbar__items--right"><a href="https://github.com/facebook/docusaurus" target="_blank" rel="noopener noreferrer" class="navbar__item navbar__link">GitHub<svg width="13.5" height="13.5" aria-label="(opens in new tab)" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a><div class="toggle_vylO colorModeToggle_DEke"><button class="clean-btn toggleButton_gllP toggleButtonDisabled_aARS" type="button" disabled="" title="system mode" aria-label="Switch between dark and light mode (currently system mode)"><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP lightToggleIcon_pyhR"><path fill="currentColor" d="M12,9c1.65,0,3,1.35,3,3s-1.35,3-3,3s-3-1.35-3-3S10.35,9,12,9 M12,7c-2.76,0-5,2.24-5,5s2.24,5,5,5s5-2.24,5-5 S14.76,7,12,7L12,7z M2,13l2,0c0.55,0,1-0.45,1-1s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S1.45,13,2,13z M20,13l2,0c0.55,0,1-0.45,1-1 s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S19.45,13,20,13z M11,2v2c0,0.55,0.45,1,1,1s1-0.45,1-1V2c0-0.55-0.45-1-1-1S11,1.45,11,2z M11,20v2c0,0.55,0.45,1,1,1s1-0.45,1-1v-2c0-0.55-0.45-1-1-1C11.45,19,11,19.45,11,20z M5.99,4.58c-0.39-0.39-1.03-0.39-1.41,0 c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0s0.39-1.03,0-1.41L5.99,4.58z M18.36,16.95 c-0.39-0.39-1.03-0.39-1.41,0c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0c0.39-0.39,0.39-1.03,0-1.41 L18.36,16.95z M19.42,5.99c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06c-0.39,0.39-0.39,1.03,0,1.41 s1.03,0.39,1.41,0L19.42,5.99z M7.05,18.36c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06 c-0.39,0.39-0.39,1.03,0,1.41s1.03,0.39,1.41,0L7.05,18.36z"></path></svg><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP darkToggleIcon_wfgR"><path fill="currentColor" d="M9.37,5.51C9.19,6.15,9.1,6.82,9.1,7.5c0,4.08,3.32,7.4,7.4,7.4c0.68,0,1.35-0.09,1.99-0.27C17.45,17.19,14.93,19,12,19 c-3.86,0-7-3.14-7-7C5,9.07,6.81,6.55,9.37,5.51z M12,3c-4.97,0-9,4.03-9,9s4.03,9,9,9s9-4.03,9-9c0-0.46-0.04-0.92-0.1-1.36 c-0.98,1.37-2.58,2.26-4.4,2.26c-2.98,0-5.4-2.42-5.4-5.4c0-1.81,0.89-3.42,2.26-4.4C12.92,3.04,12.46,3,12,3L12,3z"></path></svg><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP systemToggleIcon_QzmC"><path fill="currentColor" d="m12 21c4.971 0 9-4.029 9-9s-4.029-9-9-9-9 4.029-9 9 4.029 9 9 9zm4.95-13.95c1.313 1.313 2.05 3.093 2.05 4.95s-0.738 3.637-2.05 4.95c-1.313 1.313-3.093 2.05-4.95 2.05v-14c1.857 0 3.637 0.737 4.95 2.05z"></path></svg></button></div><div class="navbarSearchContainer_Bca1"></div></div></div><div role="presentation" class="navbar-sidebar__backdrop"></div></nav><div id="__docusaurus_skipToContent_fallback" class="theme-layout-main main-wrapper mainWrapper_z2l0"><div class="docsWrapper_hBAB"><button aria-label="Scroll back to top" class="clean-btn theme-back-to-top-button backToTopButton_sjWU" type="button"></button><div class="docRoot_UBD9"><aside class="theme-doc-sidebar-container docSidebarContainer_YfHR"><div class="sidebarViewport_aRkj"><div class="sidebar_njMd"><nav aria-label="Docs sidebar" class="menu thin-scrollbar menu_SIkG"><ul class="theme-doc-sidebar-menu menu__list"><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--sublist-caret" role="button" aria-expanded="false" href="/infra-for-ai/docs/intro/overview"><span title="Introduction" class="categoryLinkLabel_W154">Introduction</span></a></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--sublist-caret" role="button" aria-expanded="false" href="/infra-for-ai/docs/networking-basics/why-networking-matters"><span title="Networking Basics for ML" class="categoryLinkLabel_W154">Networking Basics for ML</span></a></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--sublist-caret menu__link--active" role="button" aria-expanded="true" href="/infra-for-ai/docs/gpu-networking/gpu-networking-101"><span title="GPU Networking" class="categoryLinkLabel_W154">GPU Networking</span></a></div><ul class="menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link menu__link--active" aria-current="page" tabindex="0" href="/infra-for-ai/docs/gpu-networking/gpu-networking-101"><span title="GPU Networking 101" class="linkLabel_WmDU">GPU Networking 101</span></a></li></ul></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--sublist-caret" role="button" aria-expanded="false" href="/infra-for-ai/docs/ml-infra/distributed-training"><span title="ML Infrastructure" class="categoryLinkLabel_W154">ML Infrastructure</span></a></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--sublist-caret" role="button" aria-expanded="false" href="/infra-for-ai/docs/observability/observability-overview"><span title="Observability" class="categoryLinkLabel_W154">Observability</span></a></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--sublist-caret" role="button" aria-expanded="false" href="/infra-for-ai/docs/career/networking-to-ml-infra"><span title="Career &amp; Transition" class="categoryLinkLabel_W154">Career &amp; Transition</span></a></div></li></ul></nav></div></div></aside><main class="docMainContainer_TBSr"><div class="container padding-top--md padding-bottom--lg"><div class="row"><div class="col docItemCol_VOVn"><div class="docItemContainer_Djhp"><article><nav class="theme-doc-breadcrumbs breadcrumbsContainer_Z_bl" aria-label="Breadcrumbs"><ul class="breadcrumbs"><li class="breadcrumbs__item"><a aria-label="Home page" class="breadcrumbs__link" href="/infra-for-ai/"><svg viewBox="0 0 24 24" class="breadcrumbHomeIcon_YNFT"><path d="M10 19v-5h4v5c0 .55.45 1 1 1h3c.55 0 1-.45 1-1v-7h1.7c.46 0 .68-.57.33-.87L12.67 3.6c-.38-.34-.96-.34-1.34 0l-8.36 7.53c-.34.3-.13.87.33.87H5v7c0 .55.45 1 1 1h3c.55 0 1-.45 1-1z" fill="currentColor"></path></svg></a></li><li class="breadcrumbs__item"><span class="breadcrumbs__link">GPU Networking</span></li><li class="breadcrumbs__item breadcrumbs__item--active"><span class="breadcrumbs__link">GPU Networking 101</span></li></ul></nav><div class="tocCollapsible_ETCw theme-doc-toc-mobile tocMobile_ITEo"><button type="button" class="clean-btn tocCollapsibleButton_TO0P">On this page</button></div><div class="theme-doc-markdown markdown"><header><h1>GPU Networking 101</h1></header><p>Modern machine learning workloads depend heavily on <strong>how GPUs talk to each other</strong>.<br>
+<!-- -->You can have the fastest GPU in the world — but if data can&#x27;t move quickly between GPUs, your training job will stall.</p>
+<p>This page explains the fundamentals of <strong>GPU connectivity</strong>, both <strong>inside a server</strong> and <strong>across multiple servers</strong>, and how these choices affect performance.</p>
+<hr>
+<h1>🚀 1. Three Ways GPUs Communicate</h1>
+<p>GPUs exchange tensors, gradients, activations, and parameters over three primary channels:</p>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="11-pcie-peripheral-component-interconnect-express">1.1 PCIe (Peripheral Component Interconnect Express)<a href="#11-pcie-peripheral-component-interconnect-express" class="hash-link" aria-label="Direct link to 1.1 PCIe (Peripheral Component Interconnect Express)" title="Direct link to 1.1 PCIe (Peripheral Component Interconnect Express)" translate="no">​</a></h2>
+<ul>
+<li class="">Standard CPU ↔ GPU interface</li>
+<li class="">Used in nearly all servers</li>
+<li class="">Shared with NICs, NVMe, SSD controllers</li>
+<li class="">High bandwidth, but <strong>not the fastest</strong> for GPU-to-GPU traffic</li>
+<li class="">Topology matters (which GPU is plugged into which PCIe root complex)</li>
+</ul>
+<p><strong>Typical bandwidth:</strong></p>
+<ul>
+<li class="">PCIe Gen4 x16 → ~32 GB/s (bidirectional)</li>
+<li class="">PCIe Gen5 x16 → ~64 GB/s (bidirectional)</li>
+</ul>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="12-nvlink-nvidia-only-interconnect">1.2 NVLink (NVIDIA-only interconnect)<a href="#12-nvlink-nvidia-only-interconnect" class="hash-link" aria-label="Direct link to 1.2 NVLink (NVIDIA-only interconnect)" title="Direct link to 1.2 NVLink (NVIDIA-only interconnect)" translate="no">​</a></h2>
+<ul>
+<li class="">High-speed GPU ↔ GPU path</li>
+<li class="">Much lower latency than PCIe</li>
+<li class="">3–10× more bandwidth depending on generation</li>
+<li class="">Used heavily in multi-GPU training (ResNet, LLMs, diffusion models)</li>
+</ul>
+<p><strong>Typical bandwidth:</strong></p>
+<ul>
+<li class="">NVLink 3.0 → ~50 GB/s each direction</li>
+<li class="">NVLink 4.0 → ~75 GB/s each direction</li>
+<li class="">NVSwitch → up to ~900 GB/s aggregate per GPU (H100 systems)</li>
+</ul>
+<p>NVLink is a <strong>mesh</strong>, <strong>ring</strong>, or <strong>full crossbar</strong> (NVSwitch) depending on the system.</p>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="13-network-fabric-nics--switches--nics">1.3 Network Fabric (NICs → Switches → NICs)<a href="#13-network-fabric-nics--switches--nics" class="hash-link" aria-label="Direct link to 1.3 Network Fabric (NICs → Switches → NICs)" title="Direct link to 1.3 Network Fabric (NICs → Switches → NICs)" translate="no">​</a></h2>
+<p>When GPUs are in <strong>different nodes</strong>, they talk over the network:</p>
+<ul>
+<li class=""><strong>Infiniband</strong> (NDR: 400 Gb/s, HDR: 200 Gb/s)</li>
+<li class=""><strong>RoCEv2</strong> (RDMA over Converged Ethernet)</li>
+<li class=""><strong>Ethernet TCP</strong> (slowest option for training)</li>
+</ul>
+<p>The network layer is what matters most for:</p>
+<ul>
+<li class="">Multi-node distributed training</li>
+<li class="">Scaling beyond 8 or 16 GPUs</li>
+<li class="">Large clusters running many jobs</li>
+<li class="">Model-parallel workloads</li>
+</ul>
+<p><strong>Typical NIC bandwidth:</strong></p>
+<table><thead><tr><th>NIC Type</th><th>Speed</th><th>Notes</th></tr></thead><tbody><tr><td>Ethernet TCP</td><td>100–400 Gb/s</td><td>Highest overhead</td></tr><tr><td>RoCEv2 RDMA</td><td>100–400 Gb/s</td><td>Low latency, kernel-bypass</td></tr><tr><td>Infiniband</td><td>100–400 Gb/s</td><td>Most efficient for ML</td></tr></tbody></table>
+<hr>
+<h1>🧠 2. Understanding GPU Topology</h1>
+<p>A GPU topology describes <strong>which GPU can talk to which other GPU</strong>, and over what path:</p>
+<div class="language-text codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">GPU ↔ GPU (NVLink or PCIe)</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">GPU ↔ NIC (PCIe)</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">NIC ↔ Switch (Network)</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">Switch ↔ NIC (Network)</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">NIC ↔ GPU (PCIe)</span><br></span></code></pre></div></div>
+<p>Good topology = efficient training.<br>
+<!-- -->Bad topology = GPUs stall waiting for communication.</p>
+<p>There are two kinds of topologies to understand:</p>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="21-intra-node-gpu-topology-inside-one-server"><strong>2.1 Intra-node GPU topology (inside one server)</strong><a href="#21-intra-node-gpu-topology-inside-one-server" class="hash-link" aria-label="Direct link to 21-intra-node-gpu-topology-inside-one-server" title="Direct link to 21-intra-node-gpu-topology-inside-one-server" translate="no">​</a></h2>
+<p>Example for an 8-GPU server:</p>
+<div class="language-text codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">GPU0 ─┬─ NVLink ── GPU1</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">      └─ PCIe ─── NIC</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain" style="display:inline-block"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">GPU2 ─┬─ NVLink ── GPU3</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">      └─ PCIe ─── NIC</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain" style="display:inline-block"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">GPU4 ─┬─ NVLink ── GPU5</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">      └─ PCIe ─── NIC</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain" style="display:inline-block"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">GPU6 ─┬─ NVLink ── GPU7</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">      └─ PCIe ─── NIC</span><br></span></code></pre></div></div>
+<p>Key questions:</p>
+<ul>
+<li class="">Which GPUs are connected by NVLink vs PCIe only?</li>
+<li class="">How many NVLink hops exist between GPU0 and GPU7?</li>
+<li class="">Do GPUs share PCIe root complexes with NICs?</li>
+</ul>
+<p>Systems with <strong>NVSwitch</strong> eliminate many of these issues by creating a <strong>full crossbar</strong> between GPUs:</p>
+<div class="language-text codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">GPU0 ─┐</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">GPU1 ─┼─ NVSwitch ─ full bandwidth to all GPUs</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">GPU2 ─┼─</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">GPU3 ─┘</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">...</span><br></span></code></pre></div></div>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="22-inter-node-topology-between-servers"><strong>2.2 Inter-node topology (between servers)</strong><a href="#22-inter-node-topology-between-servers" class="hash-link" aria-label="Direct link to 22-inter-node-topology-between-servers" title="Direct link to 22-inter-node-topology-between-servers" translate="no">​</a></h2>
+<p>A simple 2-node setup:</p>
+<div class="language-text codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">Node A (8 GPUs)   &lt;——&gt;   Node B (8 GPUs)</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">     |                          |</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">     |                          |</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    NIC                        NIC</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">     \                         /</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">      \                       /</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">        —— Switch / Fabric ——</span><br></span></code></pre></div></div>
+<p>In a cluster:</p>
+<ul>
+<li class="">Each node may have <strong>1 or 2 NICs</strong></li>
+<li class="">NICs may connect to <strong>different leaf switches</strong></li>
+<li class="">Switches connect to <strong>spine switches</strong></li>
+<li class="">The overall design may be CLOS/Leaf-Spine</li>
+</ul>
+<p>Training communication performance depends heavily on:</p>
+<ul>
+<li class="">oversubscription</li>
+<li class="">ECMP hashing</li>
+<li class="">RDMA configuration</li>
+<li class="">congestion control (DCQCN, ECN, PFC)</li>
+<li class="">cable layout</li>
+<li class="">switch buffers</li>
+</ul>
+<hr>
+<h1>🔥 3. NCCL: How GPUs Use the Network</h1>
+<p><strong>NVIDIA Collective Communication Library (NCCL)</strong> is the backbone of multi-GPU training.</p>
+<p>NCCL selects communication paths based on:</p>
+<ul>
+<li class="">GPU topology (NVLink availability)</li>
+<li class="">NIC affinities (which GPU is closest to which NIC)</li>
+<li class="">Network bandwidth and latency</li>
+<li class="">Number of rings needed for the collective</li>
+</ul>
+<p>For example, in AllReduce:</p>
+<div class="language-text codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">GPU → NVLink → GPU → NIC → Switch → NIC → GPU → NVLink → GPU</span><br></span></code></pre></div></div>
+<p>NCCL builds:</p>
+<ul>
+<li class=""><strong>Rings</strong> (for bandwidth)</li>
+<li class=""><strong>Trees</strong> (for latency)</li>
+<li class=""><strong>Hybrid topologies</strong> (for large clusters)</li>
+</ul>
+<p>Understanding NCCL’s topology logs is one of the most underrated skills in ML infra engineering.</p>
+<hr>
+<h1>⚡ 4. PCIe vs NVLink vs Network: What actually matters?</h1>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="pcie">PCIe<a href="#pcie" class="hash-link" aria-label="Direct link to PCIe" title="Direct link to PCIe" translate="no">​</a></h3>
+<ul>
+<li class="">Good for CPU → GPU transfers</li>
+<li class="">Shared bus</li>
+<li class="">Higher latency than NVLink</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="nvlink">NVLink<a href="#nvlink" class="hash-link" aria-label="Direct link to NVLink" title="Direct link to NVLink" translate="no">​</a></h3>
+<ul>
+<li class="">Optimal for GPU ↔ GPU communication</li>
+<li class="">~10× the bandwidth of PCIe</li>
+<li class="">~5× lower latency</li>
+<li class="">Crucial for multi-GPU model training (LLMs, diffusion)</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="network-rdma-or-ib">Network (RDMA or IB)<a href="#network-rdma-or-ib" class="hash-link" aria-label="Direct link to Network (RDMA or IB)" title="Direct link to Network (RDMA or IB)" translate="no">​</a></h3>
+<ul>
+<li class="">Crucial once you cross servers</li>
+<li class="">Performance bottleneck if:<!-- -->
+<ul>
+<li class="">You use TCP instead of RDMA</li>
+<li class="">The cluster fabric is oversubscribed</li>
+<li class="">ECMP hashing is uneven</li>
+<li class="">NICs are misaligned with GPUs</li>
+</ul>
+</li>
+</ul>
+<p><strong>Rule of thumb:</strong></p>
+<p>Inside a node → NVLink dominates.<br>
+<!-- -->Across nodes → RDMA/Infiniband dominates.</p>
+<hr>
+<h1>🧰 5. How to inspect GPU topology</h1>
+<p>Run:</p>
+<div class="language-text codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">nvidia-smi topo --matrix</span><br></span></code></pre></div></div>
+<p>Output shows:</p>
+<ul>
+<li class="">NVLink connectivity</li>
+<li class="">PCIe hops</li>
+<li class="">NIC proximity</li>
+</ul>
+<p>Terms:</p>
+<ul>
+<li class=""><strong>NV1</strong> = NVLink</li>
+<li class=""><strong>PIX</strong> = same PCIe switch</li>
+<li class=""><strong>PHB</strong> = through CPU root complex (slow)</li>
+</ul>
+<hr>
+<h1>📉 6. Common GPU Networking Bottlenecks</h1>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="1-gpus-share-a-pcie-root-with-the-nic">1. GPUs share a PCIe root with the NIC<a href="#1-gpus-share-a-pcie-root-with-the-nic" class="hash-link" aria-label="Direct link to 1. GPUs share a PCIe root with the NIC" title="Direct link to 1. GPUs share a PCIe root with the NIC" translate="no">​</a></h3>
+<p>→ Causes contention → reduces bandwidth.</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="2-nvlink-rings-are-unbalanced">2. NVLink rings are unbalanced<a href="#2-nvlink-rings-are-unbalanced" class="hash-link" aria-label="Direct link to 2. NVLink rings are unbalanced" title="Direct link to 2. NVLink rings are unbalanced" translate="no">​</a></h3>
+<p>→ One GPU becomes a choke point.</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="3-oversubscribed-spine-switches">3. Oversubscribed spine switches<a href="#3-oversubscribed-spine-switches" class="hash-link" aria-label="Direct link to 3. Oversubscribed spine switches" title="Direct link to 3. Oversubscribed spine switches" translate="no">​</a></h3>
+<p>→ Multi-node scaling falls apart.</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="4-rdma-fallback-to-tcp">4. RDMA fallback to TCP<a href="#4-rdma-fallback-to-tcp" class="hash-link" aria-label="Direct link to 4. RDMA fallback to TCP" title="Direct link to 4. RDMA fallback to TCP" translate="no">​</a></h3>
+<p>→ Training becomes 3–10× slower.</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="5-wrong-numa-alignment">5. Wrong NUMA alignment<a href="#5-wrong-numa-alignment" class="hash-link" aria-label="Direct link to 5. Wrong NUMA alignment" title="Direct link to 5. Wrong NUMA alignment" translate="no">​</a></h3>
+<p>→ NIC connected to a GPU on another CPU socket.</p>
+<hr>
+<h1>🏁 7. Summary</h1>
+<p><strong>GPU networking is the foundation of ML infrastructure.</strong><br>
+<!-- -->Understanding:</p>
+<ul>
+<li class="">PCIe</li>
+<li class="">NVLink</li>
+<li class="">NIC placement</li>
+<li class="">Network fabrics</li>
+<li class="">NCCL behavior</li>
+</ul>
+<p>is essential for diagnosing performance issues and designing scalable training clusters.</p>
+<hr></div><footer class="theme-doc-footer docusaurus-mt-lg"><div class="row margin-top--sm theme-doc-footer-edit-meta-row"><div class="col noPrint_WFHX"><a href="https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/gpu-networking/gpu-networking-101.md" target="_blank" rel="noopener noreferrer" class="theme-edit-this-page"><svg fill="currentColor" height="20" width="20" viewBox="0 0 40 40" class="iconEdit_Z9Sw" aria-hidden="true"><g><path d="m34.5 11.7l-3 3.1-6.3-6.3 3.1-3q0.5-0.5 1.2-0.5t1.1 0.5l3.9 3.9q0.5 0.4 0.5 1.1t-0.5 1.2z m-29.5 17.1l18.4-18.5 6.3 6.3-18.4 18.4h-6.3v-6.2z"></path></g></svg>Edit this page</a></div><div class="col lastUpdated_JAkA"></div></div></footer></article><nav class="docusaurus-mt-lg pagination-nav" aria-label="Docs pages"><a class="pagination-nav__link pagination-nav__link--prev" href="/infra-for-ai/docs/networking-basics/why-networking-matters"><div class="pagination-nav__sublabel">Previous</div><div class="pagination-nav__label">Why Networking Matters for ML</div></a><a class="pagination-nav__link pagination-nav__link--next" href="/infra-for-ai/docs/ml-infra/distributed-training"><div class="pagination-nav__sublabel">Next</div><div class="pagination-nav__label">Distributed Training &amp; Communication</div></a></nav></div></div><div class="col col--3"><div class="tableOfContents_bqdL thin-scrollbar theme-doc-toc-desktop"><ul class="table-of-contents table-of-contents__left-border"><li><a href="#11-pcie-peripheral-component-interconnect-express" class="table-of-contents__link toc-highlight">1.1 PCIe (Peripheral Component Interconnect Express)</a></li><li><a href="#12-nvlink-nvidia-only-interconnect" class="table-of-contents__link toc-highlight">1.2 NVLink (NVIDIA-only interconnect)</a></li><li><a href="#13-network-fabric-nics--switches--nics" class="table-of-contents__link toc-highlight">1.3 Network Fabric (NICs → Switches → NICs)</a></li><li><a href="#21-intra-node-gpu-topology-inside-one-server" class="table-of-contents__link toc-highlight"><strong>2.1 Intra-node GPU topology (inside one server)</strong></a></li><li><a href="#22-inter-node-topology-between-servers" class="table-of-contents__link toc-highlight"><strong>2.2 Inter-node topology (between servers)</strong></a><ul><li><a href="#pcie" class="table-of-contents__link toc-highlight">PCIe</a></li><li><a href="#nvlink" class="table-of-contents__link toc-highlight">NVLink</a></li><li><a href="#network-rdma-or-ib" class="table-of-contents__link toc-highlight">Network (RDMA or IB)</a></li><li><a href="#1-gpus-share-a-pcie-root-with-the-nic" class="table-of-contents__link toc-highlight">1. GPUs share a PCIe root with the NIC</a></li><li><a href="#2-nvlink-rings-are-unbalanced" class="table-of-contents__link toc-highlight">2. NVLink rings are unbalanced</a></li><li><a href="#3-oversubscribed-spine-switches" class="table-of-contents__link toc-highlight">3. Oversubscribed spine switches</a></li><li><a href="#4-rdma-fallback-to-tcp" class="table-of-contents__link toc-highlight">4. RDMA fallback to TCP</a></li><li><a href="#5-wrong-numa-alignment" class="table-of-contents__link toc-highlight">5. Wrong NUMA alignment</a></li></ul></li></ul></div></div></div></div></main></div></div></div><footer class="theme-layout-footer footer footer--dark"><div class="container container-fluid"><div class="row footer__links"><div class="theme-layout-footer-column col footer__col"><div class="footer__title">Docs</div><ul class="footer__items clean-list"><li class="footer__item"><a class="footer__link-item" href="/infra-for-ai/docs/intro">Tutorial</a></li></ul></div><div class="theme-layout-footer-column col footer__col"><div class="footer__title">Community</div><ul class="footer__items clean-list"><li class="footer__item"><a href="https://stackoverflow.com/questions/tagged/docusaurus" target="_blank" rel="noopener noreferrer" class="footer__link-item">Stack Overflow<svg width="13.5" height="13.5" aria-label="(opens in new tab)" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a></li><li class="footer__item"><a href="https://discordapp.com/invite/docusaurus" target="_blank" rel="noopener noreferrer" class="footer__link-item">Discord<svg width="13.5" height="13.5" aria-label="(opens in new tab)" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a></li><li class="footer__item"><a href="https://x.com/docusaurus" target="_blank" rel="noopener noreferrer" class="footer__link-item">X<svg width="13.5" height="13.5" aria-label="(opens in new tab)" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a></li></ul></div><div class="theme-layout-footer-column col footer__col"><div class="footer__title">More</div><ul class="footer__items clean-list"><li class="footer__item"><a class="footer__link-item" href="/infra-for-ai/blog">Blog</a></li><li class="footer__item"><a href="https://github.com/facebook/docusaurus" target="_blank" rel="noopener noreferrer" class="footer__link-item">GitHub<svg width="13.5" height="13.5" aria-label="(opens in new tab)" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a></li></ul></div></div><div class="footer__bottom text--center"><div class="footer__copyright">Copyright © 2025 My Project, Inc. Built with Docusaurus.</div></div></div></footer></div>
+</body>
+</html>

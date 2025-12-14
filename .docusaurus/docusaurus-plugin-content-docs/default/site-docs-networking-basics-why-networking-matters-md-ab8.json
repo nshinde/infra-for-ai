@@ -1,0 +1,28 @@
+{
+  "id": "networking-basics/why-networking-matters",
+  "title": "Why Networking Matters for ML",
+  "description": "When people try to speed up ML, they usually think about:",
+  "source": "@site/docs/networking-basics/why-networking-matters.md",
+  "sourceDirName": "networking-basics",
+  "slug": "/networking-basics/why-networking-matters",
+  "permalink": "/infra-for-ai/docs/networking-basics/why-networking-matters",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/networking-basics/why-networking-matters.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "id": "why-networking-matters",
+    "title": "Why Networking Matters for ML",
+    "sidebar_label": "Why Networking Matters for ML"
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "What is ML Infrastructure?",
+    "permalink": "/infra-for-ai/docs/intro/overview"
+  },
+  "next": {
+    "title": "GPU Networking 101",
+    "permalink": "/infra-for-ai/docs/gpu-networking/gpu-networking-101"
+  }
+}

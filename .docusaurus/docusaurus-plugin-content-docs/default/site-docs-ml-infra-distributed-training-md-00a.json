@@ -1,0 +1,28 @@
+{
+  "id": "ml-infra/distributed-training",
+  "title": "Distributed Training & Communication",
+  "description": "Distributed training lets you use more GPUs and more machines to train a model faster or on larger datasets.",
+  "source": "@site/docs/ml-infra/distributed-training.md",
+  "sourceDirName": "ml-infra",
+  "slug": "/ml-infra/distributed-training",
+  "permalink": "/infra-for-ai/docs/ml-infra/distributed-training",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/ml-infra/distributed-training.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "id": "distributed-training",
+    "title": "Distributed Training & Communication",
+    "sidebar_label": "Distributed Training & Communication"
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "GPU Networking 101",
+    "permalink": "/infra-for-ai/docs/gpu-networking/gpu-networking-101"
+  },
+  "next": {
+    "title": "RDMA for ML Infra",
+    "permalink": "/infra-for-ai/docs/ml-infra/rdma-for-ml-infra"
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "id": "ml-infra/rdma-for-ml-infra",
+  "title": "RDMA for ML Infrastructure Engineers",
+  "description": "RDMA (Remote Direct Memory Access) lets one machine read or write memory on another machine without involving the remote CPU and with minimal kernel involvement.",
+  "source": "@site/docs/ml-infra/rdma-for-ml-infra.md",
+  "sourceDirName": "ml-infra",
+  "slug": "/ml-infra/rdma-for-ml-infra",
+  "permalink": "/infra-for-ai/docs/ml-infra/rdma-for-ml-infra",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/ml-infra/rdma-for-ml-infra.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "id": "rdma-for-ml-infra",
+    "title": "RDMA for ML Infrastructure Engineers",
+    "sidebar_label": "RDMA for ML Infra"
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Distributed Training & Communication",
+    "permalink": "/infra-for-ai/docs/ml-infra/distributed-training"
+  },
+  "next": {
+    "title": "NCCL Internals",
+    "permalink": "/infra-for-ai/docs/ml-infra/nccl-internals"
+  }
+}

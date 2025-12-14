@@ -14,14 +14,5 @@
   "sidebarPosition": 6,
   "frontMatter": {
     "sidebar_position": 6
-  },
-  "sidebar": "tutorialSidebar",
-  "previous": {
-    "title": "Deploy your site",
-    "permalink": "/infra-for-ai/docs/tutorial-basics/deploy-your-site"
-  },
-  "next": {
-    "title": "Tutorial - Extras",
-    "permalink": "/infra-for-ai/docs/category/tutorial---extras"
   }
 }

@@ -79,79 +79,84 @@ export default [
   },
   {
     path: '/infra-for-ai/docs',
-    component: ComponentCreator('/infra-for-ai/docs', '76a'),
+    component: ComponentCreator('/infra-for-ai/docs', 'bc3'),
     routes: [
       {
         path: '/infra-for-ai/docs',
-        component: ComponentCreator('/infra-for-ai/docs', '340'),
+        component: ComponentCreator('/infra-for-ai/docs', '5a4'),
         routes: [
           {
             path: '/infra-for-ai/docs',
-            component: ComponentCreator('/infra-for-ai/docs', 'd82'),
+            component: ComponentCreator('/infra-for-ai/docs', '726'),
             routes: [
               {
-                path: '/infra-for-ai/docs/category/tutorial---basics',
-                component: ComponentCreator('/infra-for-ai/docs/category/tutorial---basics', '710'),
+                path: '/infra-for-ai/docs/career/ml-infra-interview-themes',
+                component: ComponentCreator('/infra-for-ai/docs/career/ml-infra-interview-themes', '8fd'),
                 exact: true,
                 sidebar: "tutorialSidebar"
               },
               {
-                path: '/infra-for-ai/docs/category/tutorial---extras',
-                component: ComponentCreator('/infra-for-ai/docs/category/tutorial---extras', '296'),
+                path: '/infra-for-ai/docs/career/networking-to-ml-infra',
+                component: ComponentCreator('/infra-for-ai/docs/career/networking-to-ml-infra', '3e3'),
+                exact: true,
+                sidebar: "tutorialSidebar"
+              },
+              {
+                path: '/infra-for-ai/docs/gpu-networking/gpu-networking-101',
+                component: ComponentCreator('/infra-for-ai/docs/gpu-networking/gpu-networking-101', '6ba'),
                 exact: true,
                 sidebar: "tutorialSidebar"
               },
               {
                 path: '/infra-for-ai/docs/intro',
-                component: ComponentCreator('/infra-for-ai/docs/intro', '2d4'),
+                component: ComponentCreator('/infra-for-ai/docs/intro', 'c1a'),
+                exact: true
+              },
+              {
+                path: '/infra-for-ai/docs/intro/overview',
+                component: ComponentCreator('/infra-for-ai/docs/intro/overview', 'cac'),
                 exact: true,
                 sidebar: "tutorialSidebar"
               },
               {
-                path: '/infra-for-ai/docs/tutorial-basics/congratulations',
-                component: ComponentCreator('/infra-for-ai/docs/tutorial-basics/congratulations', '85f'),
+                path: '/infra-for-ai/docs/ml-infra/distributed-training',
+                component: ComponentCreator('/infra-for-ai/docs/ml-infra/distributed-training', '546'),
                 exact: true,
                 sidebar: "tutorialSidebar"
               },
               {
-                path: '/infra-for-ai/docs/tutorial-basics/create-a-blog-post',
-                component: ComponentCreator('/infra-for-ai/docs/tutorial-basics/create-a-blog-post', 'eb7'),
+                path: '/infra-for-ai/docs/ml-infra/nccl-internals',
+                component: ComponentCreator('/infra-for-ai/docs/ml-infra/nccl-internals', '414'),
                 exact: true,
                 sidebar: "tutorialSidebar"
               },
               {
-                path: '/infra-for-ai/docs/tutorial-basics/create-a-document',
-                component: ComponentCreator('/infra-for-ai/docs/tutorial-basics/create-a-document', '33c'),
+                path: '/infra-for-ai/docs/ml-infra/rdma-for-ml-infra',
+                component: ComponentCreator('/infra-for-ai/docs/ml-infra/rdma-for-ml-infra', '58d'),
                 exact: true,
                 sidebar: "tutorialSidebar"
               },
               {
-                path: '/infra-for-ai/docs/tutorial-basics/create-a-page',
-                component: ComponentCreator('/infra-for-ai/docs/tutorial-basics/create-a-page', '290'),
+                path: '/infra-for-ai/docs/networking-basics/why-networking-matters',
+                component: ComponentCreator('/infra-for-ai/docs/networking-basics/why-networking-matters', '481'),
                 exact: true,
                 sidebar: "tutorialSidebar"
               },
               {
-                path: '/infra-for-ai/docs/tutorial-basics/deploy-your-site',
-                component: ComponentCreator('/infra-for-ai/docs/tutorial-basics/deploy-your-site', '1fb'),
+                path: '/infra-for-ai/docs/observability/gpu-metrics',
+                component: ComponentCreator('/infra-for-ai/docs/observability/gpu-metrics', '2cd'),
                 exact: true,
                 sidebar: "tutorialSidebar"
               },
               {
-                path: '/infra-for-ai/docs/tutorial-basics/markdown-features',
-                component: ComponentCreator('/infra-for-ai/docs/tutorial-basics/markdown-features', '980'),
+                path: '/infra-for-ai/docs/observability/network-metrics',
+                component: ComponentCreator('/infra-for-ai/docs/observability/network-metrics', '5b9'),
                 exact: true,
                 sidebar: "tutorialSidebar"
               },
               {
-                path: '/infra-for-ai/docs/tutorial-extras/manage-docs-versions',
-                component: ComponentCreator('/infra-for-ai/docs/tutorial-extras/manage-docs-versions', '17d'),
-                exact: true,
-                sidebar: "tutorialSidebar"
-              },
-              {
-                path: '/infra-for-ai/docs/tutorial-extras/translate-your-site',
-                component: ComponentCreator('/infra-for-ai/docs/tutorial-extras/translate-your-site', '223'),
+                path: '/infra-for-ai/docs/observability/observability-overview',
+                component: ComponentCreator('/infra-for-ai/docs/observability/observability-overview', '69f'),
                 exact: true,
                 sidebar: "tutorialSidebar"
               }

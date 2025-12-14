@@ -1,0 +1,28 @@
+{
+  "id": "ml-infra/nccl-internals",
+  "title": "NCCL Internals (High Level)",
+  "description": "NCCL (NVIDIA Collective Communication Library) is the workhorse behind many multi‑GPU training jobs.",
+  "source": "@site/docs/ml-infra/nccl-internals.md",
+  "sourceDirName": "ml-infra",
+  "slug": "/ml-infra/nccl-internals",
+  "permalink": "/infra-for-ai/docs/ml-infra/nccl-internals",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/ml-infra/nccl-internals.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "id": "nccl-internals",
+    "title": "NCCL Internals (High Level)",
+    "sidebar_label": "NCCL Internals"
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "RDMA for ML Infra",
+    "permalink": "/infra-for-ai/docs/ml-infra/rdma-for-ml-infra"
+  },
+  "next": {
+    "title": "Observability Overview",
+    "permalink": "/infra-for-ai/docs/observability/observability-overview"
+  }
+}
