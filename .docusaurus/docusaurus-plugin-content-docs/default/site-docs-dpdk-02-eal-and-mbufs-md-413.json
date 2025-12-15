@@ -1,0 +1,29 @@
+{
+  "id": "dpdk/dpdk-eal-and-mbufs",
+  "title": "EAL, Mempools, and Mbufs",
+  "description": "DPDK apps follow a common skeleton:",
+  "source": "@site/docs/dpdk/02-eal-and-mbufs.md",
+  "sourceDirName": "dpdk",
+  "slug": "/dpdk/dpdk-eal-and-mbufs",
+  "permalink": "/infra-for-ai/docs/dpdk/dpdk-eal-and-mbufs",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/dpdk/02-eal-and-mbufs.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 2,
+  "frontMatter": {
+    "id": "dpdk-eal-and-mbufs",
+    "title": "EAL, Mempools, and Mbufs",
+    "sidebar_label": "EAL & Mbufs"
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Build & Run (Linux)",
+    "permalink": "/infra-for-ai/docs/dpdk/dpdk-build-and-run-linux"
+  },
+  "next": {
+    "title": "RX/TX Basics",
+    "permalink": "/infra-for-ai/docs/dpdk/dpdk-rx-tx-basics"
+  }
+}

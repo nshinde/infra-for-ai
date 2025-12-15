@@ -1,0 +1,29 @@
+{
+  "id": "dpdk/dpdk-debugging-and-profiling",
+  "title": "Debugging & Profiling DPDK Apps",
+  "description": "Useful tools and approaches:",
+  "source": "@site/docs/dpdk/05-debugging-and-profiling.md",
+  "sourceDirName": "dpdk",
+  "slug": "/dpdk/dpdk-debugging-and-profiling",
+  "permalink": "/infra-for-ai/docs/dpdk/dpdk-debugging-and-profiling",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/dpdk/05-debugging-and-profiling.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 5,
+  "frontMatter": {
+    "id": "dpdk-debugging-and-profiling",
+    "title": "Debugging & Profiling DPDK Apps",
+    "sidebar_label": "Debugging"
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Rings & Multicore",
+    "permalink": "/infra-for-ai/docs/dpdk/dpdk-rings-and-multicore"
+  },
+  "next": {
+    "title": "Networking → ML Infra",
+    "permalink": "/infra-for-ai/docs/career/networking-to-ml-infra"
+  }
+}

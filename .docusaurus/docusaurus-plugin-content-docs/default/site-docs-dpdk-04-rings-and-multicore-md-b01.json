@@ -1,0 +1,29 @@
+{
+  "id": "dpdk/dpdk-rings-and-multicore",
+  "title": "Rings, Queues, and Multicore Scaling",
+  "description": "DPDK is designed for multicore scaling.",
+  "source": "@site/docs/dpdk/04-rings-and-multicore.md",
+  "sourceDirName": "dpdk",
+  "slug": "/dpdk/dpdk-rings-and-multicore",
+  "permalink": "/infra-for-ai/docs/dpdk/dpdk-rings-and-multicore",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/dpdk/04-rings-and-multicore.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 4,
+  "frontMatter": {
+    "id": "dpdk-rings-and-multicore",
+    "title": "Rings, Queues, and Multicore Scaling",
+    "sidebar_label": "Rings & Multicore"
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "RX/TX Basics",
+    "permalink": "/infra-for-ai/docs/dpdk/dpdk-rx-tx-basics"
+  },
+  "next": {
+    "title": "Debugging",
+    "permalink": "/infra-for-ai/docs/dpdk/dpdk-debugging-and-profiling"
+  }
+}

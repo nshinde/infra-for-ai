@@ -16,5 +16,14 @@
     "title": "Start here",
     "slug": "/intro",
     "sidebar_label": "Start here"
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "What is ML Infrastructure?",
+    "permalink": "/infra-for-ai/docs/intro/overview"
+  },
+  "next": {
+    "title": "Why Networking Matters for ML",
+    "permalink": "/infra-for-ai/docs/networking-basics/why-networking-matters"
   }
 }

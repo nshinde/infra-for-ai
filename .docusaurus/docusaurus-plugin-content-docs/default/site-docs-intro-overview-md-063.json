@@ -18,7 +18,7 @@
   },
   "sidebar": "tutorialSidebar",
   "next": {
-    "title": "Why Networking Matters for ML",
-    "permalink": "/infra-for-ai/docs/networking-basics/why-networking-matters"
+    "title": "Start here",
+    "permalink": "/infra-for-ai/docs/intro"
   }
 }

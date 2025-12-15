@@ -22,7 +22,7 @@
     "permalink": "/infra-for-ai/docs/observability/gpu-metrics"
   },
   "next": {
-    "title": "Networking → ML Infra",
-    "permalink": "/infra-for-ai/docs/career/networking-to-ml-infra"
+    "title": "NCCL Guide",
+    "permalink": "/infra-for-ai/docs/nccl/nccl-intro"
   }
 }

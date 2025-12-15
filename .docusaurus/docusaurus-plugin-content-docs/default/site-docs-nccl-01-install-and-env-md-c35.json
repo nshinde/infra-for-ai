@@ -1,0 +1,29 @@
+{
+  "id": "nccl/nccl-install-and-env",
+  "title": "NCCL Installation & Environment",
+  "description": "This guide assumes you will run NCCL examples on Linux with NVIDIA GPUs.",
+  "source": "@site/docs/nccl/01-install-and-env.md",
+  "sourceDirName": "nccl",
+  "slug": "/nccl/nccl-install-and-env",
+  "permalink": "/infra-for-ai/docs/nccl/nccl-install-and-env",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/nccl/01-install-and-env.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 1,
+  "frontMatter": {
+    "id": "nccl-install-and-env",
+    "title": "NCCL Installation & Environment",
+    "sidebar_label": "Install & Environment"
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "NCCL Guide",
+    "permalink": "/infra-for-ai/docs/nccl/nccl-intro"
+  },
+  "next": {
+    "title": "Communicators",
+    "permalink": "/infra-for-ai/docs/nccl/nccl-communicators"
+  }
+}

@@ -206,17 +206,17 @@
     },
     "content": "393be207"
   },
-  "/infra-for-ai/docs-bc3": {
+  "/infra-for-ai/docs-fae": {
     "__comp": "5e95c892",
     "__context": {
       "plugin": "aba21aa0"
     }
   },
-  "/infra-for-ai/docs-5a4": {
+  "/infra-for-ai/docs-55f": {
     "__comp": "a7bd4aaa",
     "__props": "985776e9"
   },
-  "/infra-for-ai/docs-726": {
+  "/infra-for-ai/docs-1a3": {
     "__comp": "a94703ab"
   },
   "/infra-for-ai/docs/career/ml-infra-interview-themes-8fd": {
@@ -227,11 +227,35 @@
     "__comp": "17896441",
     "content": "9ff406d7"
   },
+  "/infra-for-ai/docs/dpdk/dpdk-build-and-run-linux-a42": {
+    "__comp": "17896441",
+    "content": "cb609e54"
+  },
+  "/infra-for-ai/docs/dpdk/dpdk-debugging-and-profiling-e12": {
+    "__comp": "17896441",
+    "content": "ab26d775"
+  },
+  "/infra-for-ai/docs/dpdk/dpdk-eal-and-mbufs-582": {
+    "__comp": "17896441",
+    "content": "413bf965"
+  },
+  "/infra-for-ai/docs/dpdk/dpdk-intro-068": {
+    "__comp": "17896441",
+    "content": "989c6dc8"
+  },
+  "/infra-for-ai/docs/dpdk/dpdk-rings-and-multicore-14c": {
+    "__comp": "17896441",
+    "content": "b0166444"
+  },
+  "/infra-for-ai/docs/dpdk/dpdk-rx-tx-basics-47b": {
+    "__comp": "17896441",
+    "content": "eb9cb4df"
+  },
   "/infra-for-ai/docs/gpu-networking/gpu-networking-101-6ba": {
     "__comp": "17896441",
     "content": "1e5ececb"
   },
-  "/infra-for-ai/docs/intro-c1a": {
+  "/infra-for-ai/docs/intro-2d4": {
     "__comp": "17896441",
     "content": "0e384e19"
   },
@@ -250,6 +274,30 @@
   "/infra-for-ai/docs/ml-infra/rdma-for-ml-infra-58d": {
     "__comp": "17896441",
     "content": "8f729155"
+  },
+  "/infra-for-ai/docs/nccl/nccl-collectives-469": {
+    "__comp": "17896441",
+    "content": "dd6c9628"
+  },
+  "/infra-for-ai/docs/nccl/nccl-communicators-cb2": {
+    "__comp": "17896441",
+    "content": "45a77136"
+  },
+  "/infra-for-ai/docs/nccl/nccl-debugging-9e9": {
+    "__comp": "17896441",
+    "content": "0080465c"
+  },
+  "/infra-for-ai/docs/nccl/nccl-install-and-env-02e": {
+    "__comp": "17896441",
+    "content": "c35cb16a"
+  },
+  "/infra-for-ai/docs/nccl/nccl-intro-9d5": {
+    "__comp": "17896441",
+    "content": "c0b17a8d"
+  },
+  "/infra-for-ai/docs/nccl/nccl-topology-and-perf-761": {
+    "__comp": "17896441",
+    "content": "d826b72c"
   },
   "/infra-for-ai/docs/networking-basics/why-networking-matters-481": {
     "__comp": "17896441",

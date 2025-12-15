@@ -1,0 +1,29 @@
+{
+  "id": "nccl/nccl-debugging",
+  "title": "NCCL Debugging Workflow",
+  "description": "When NCCL is “slow” or “flaky”, a good workflow is:",
+  "source": "@site/docs/nccl/05-debugging.md",
+  "sourceDirName": "nccl",
+  "slug": "/nccl/nccl-debugging",
+  "permalink": "/infra-for-ai/docs/nccl/nccl-debugging",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/nccl/05-debugging.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 5,
+  "frontMatter": {
+    "id": "nccl-debugging",
+    "title": "NCCL Debugging Workflow",
+    "sidebar_label": "Debugging"
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Topology & Performance",
+    "permalink": "/infra-for-ai/docs/nccl/nccl-topology-and-perf"
+  },
+  "next": {
+    "title": "DPDK Guide",
+    "permalink": "/infra-for-ai/docs/dpdk/dpdk-intro"
+  }
+}

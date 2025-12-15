@@ -1,0 +1,29 @@
+{
+  "id": "nccl/nccl-collectives",
+  "title": "NCCL Collectives & Traffic Patterns",
+  "description": "Most distributed training traffic can be described using a small set of collectives.",
+  "source": "@site/docs/nccl/03-collectives.md",
+  "sourceDirName": "nccl",
+  "slug": "/nccl/nccl-collectives",
+  "permalink": "/infra-for-ai/docs/nccl/nccl-collectives",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/nccl/03-collectives.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 3,
+  "frontMatter": {
+    "id": "nccl-collectives",
+    "title": "NCCL Collectives & Traffic Patterns",
+    "sidebar_label": "Collectives"
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Communicators",
+    "permalink": "/infra-for-ai/docs/nccl/nccl-communicators"
+  },
+  "next": {
+    "title": "Topology & Performance",
+    "permalink": "/infra-for-ai/docs/nccl/nccl-topology-and-perf"
+  }
+}

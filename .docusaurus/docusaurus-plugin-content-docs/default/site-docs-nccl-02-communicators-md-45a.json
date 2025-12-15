@@ -1,0 +1,29 @@
+{
+  "id": "nccl/nccl-communicators",
+  "title": "NCCL Communicators",
+  "description": "A communicator is NCCL’s way of representing a group of ranks that can participate in collective operations.",
+  "source": "@site/docs/nccl/02-communicators.md",
+  "sourceDirName": "nccl",
+  "slug": "/nccl/nccl-communicators",
+  "permalink": "/infra-for-ai/docs/nccl/nccl-communicators",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/nccl/02-communicators.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 2,
+  "frontMatter": {
+    "id": "nccl-communicators",
+    "title": "NCCL Communicators",
+    "sidebar_label": "Communicators"
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Install & Environment",
+    "permalink": "/infra-for-ai/docs/nccl/nccl-install-and-env"
+  },
+  "next": {
+    "title": "Collectives",
+    "permalink": "/infra-for-ai/docs/nccl/nccl-collectives"
+  }
+}

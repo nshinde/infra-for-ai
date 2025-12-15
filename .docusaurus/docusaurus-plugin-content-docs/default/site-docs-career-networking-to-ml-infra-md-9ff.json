@@ -18,8 +18,8 @@
   },
   "sidebar": "tutorialSidebar",
   "previous": {
-    "title": "Network Metrics",
-    "permalink": "/infra-for-ai/docs/observability/network-metrics"
+    "title": "Debugging",
+    "permalink": "/infra-for-ai/docs/dpdk/dpdk-debugging-and-profiling"
   },
   "next": {
     "title": "ML Infra Interview Themes",

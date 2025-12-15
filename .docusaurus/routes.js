@@ -79,15 +79,15 @@ export default [
   },
   {
     path: '/infra-for-ai/docs',
-    component: ComponentCreator('/infra-for-ai/docs', 'bc3'),
+    component: ComponentCreator('/infra-for-ai/docs', 'fae'),
     routes: [
       {
         path: '/infra-for-ai/docs',
-        component: ComponentCreator('/infra-for-ai/docs', '5a4'),
+        component: ComponentCreator('/infra-for-ai/docs', '55f'),
         routes: [
           {
             path: '/infra-for-ai/docs',
-            component: ComponentCreator('/infra-for-ai/docs', '726'),
+            component: ComponentCreator('/infra-for-ai/docs', '1a3'),
             routes: [
               {
                 path: '/infra-for-ai/docs/career/ml-infra-interview-themes',
@@ -102,6 +102,42 @@ export default [
                 sidebar: "tutorialSidebar"
               },
               {
+                path: '/infra-for-ai/docs/dpdk/dpdk-build-and-run-linux',
+                component: ComponentCreator('/infra-for-ai/docs/dpdk/dpdk-build-and-run-linux', 'a42'),
+                exact: true,
+                sidebar: "tutorialSidebar"
+              },
+              {
+                path: '/infra-for-ai/docs/dpdk/dpdk-debugging-and-profiling',
+                component: ComponentCreator('/infra-for-ai/docs/dpdk/dpdk-debugging-and-profiling', 'e12'),
+                exact: true,
+                sidebar: "tutorialSidebar"
+              },
+              {
+                path: '/infra-for-ai/docs/dpdk/dpdk-eal-and-mbufs',
+                component: ComponentCreator('/infra-for-ai/docs/dpdk/dpdk-eal-and-mbufs', '582'),
+                exact: true,
+                sidebar: "tutorialSidebar"
+              },
+              {
+                path: '/infra-for-ai/docs/dpdk/dpdk-intro',
+                component: ComponentCreator('/infra-for-ai/docs/dpdk/dpdk-intro', '068'),
+                exact: true,
+                sidebar: "tutorialSidebar"
+              },
+              {
+                path: '/infra-for-ai/docs/dpdk/dpdk-rings-and-multicore',
+                component: ComponentCreator('/infra-for-ai/docs/dpdk/dpdk-rings-and-multicore', '14c'),
+                exact: true,
+                sidebar: "tutorialSidebar"
+              },
+              {
+                path: '/infra-for-ai/docs/dpdk/dpdk-rx-tx-basics',
+                component: ComponentCreator('/infra-for-ai/docs/dpdk/dpdk-rx-tx-basics', '47b'),
+                exact: true,
+                sidebar: "tutorialSidebar"
+              },
+              {
                 path: '/infra-for-ai/docs/gpu-networking/gpu-networking-101',
                 component: ComponentCreator('/infra-for-ai/docs/gpu-networking/gpu-networking-101', '6ba'),
                 exact: true,
@@ -109,8 +145,9 @@ export default [
               },
               {
                 path: '/infra-for-ai/docs/intro',
-                component: ComponentCreator('/infra-for-ai/docs/intro', 'c1a'),
-                exact: true
+                component: ComponentCreator('/infra-for-ai/docs/intro', '2d4'),
+                exact: true,
+                sidebar: "tutorialSidebar"
               },
               {
                 path: '/infra-for-ai/docs/intro/overview',
@@ -133,6 +170,42 @@ export default [
               {
                 path: '/infra-for-ai/docs/ml-infra/rdma-for-ml-infra',
                 component: ComponentCreator('/infra-for-ai/docs/ml-infra/rdma-for-ml-infra', '58d'),
+                exact: true,
+                sidebar: "tutorialSidebar"
+              },
+              {
+                path: '/infra-for-ai/docs/nccl/nccl-collectives',
+                component: ComponentCreator('/infra-for-ai/docs/nccl/nccl-collectives', '469'),
+                exact: true,
+                sidebar: "tutorialSidebar"
+              },
+              {
+                path: '/infra-for-ai/docs/nccl/nccl-communicators',
+                component: ComponentCreator('/infra-for-ai/docs/nccl/nccl-communicators', 'cb2'),
+                exact: true,
+                sidebar: "tutorialSidebar"
+              },
+              {
+                path: '/infra-for-ai/docs/nccl/nccl-debugging',
+                component: ComponentCreator('/infra-for-ai/docs/nccl/nccl-debugging', '9e9'),
+                exact: true,
+                sidebar: "tutorialSidebar"
+              },
+              {
+                path: '/infra-for-ai/docs/nccl/nccl-install-and-env',
+                component: ComponentCreator('/infra-for-ai/docs/nccl/nccl-install-and-env', '02e'),
+                exact: true,
+                sidebar: "tutorialSidebar"
+              },
+              {
+                path: '/infra-for-ai/docs/nccl/nccl-intro',
+                component: ComponentCreator('/infra-for-ai/docs/nccl/nccl-intro', '9d5'),
+                exact: true,
+                sidebar: "tutorialSidebar"
+              },
+              {
+                path: '/infra-for-ai/docs/nccl/nccl-topology-and-perf',
+                component: ComponentCreator('/infra-for-ai/docs/nccl/nccl-topology-and-perf', '761'),
                 exact: true,
                 sidebar: "tutorialSidebar"
               },

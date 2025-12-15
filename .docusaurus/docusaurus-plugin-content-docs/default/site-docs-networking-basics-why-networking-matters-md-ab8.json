@@ -18,8 +18,8 @@
   },
   "sidebar": "tutorialSidebar",
   "previous": {
-    "title": "What is ML Infrastructure?",
-    "permalink": "/infra-for-ai/docs/intro/overview"
+    "title": "Start here",
+    "permalink": "/infra-for-ai/docs/intro"
   },
   "next": {
     "title": "GPU Networking 101",

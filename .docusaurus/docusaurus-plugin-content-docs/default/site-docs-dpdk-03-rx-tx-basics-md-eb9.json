@@ -1,0 +1,29 @@
+{
+  "id": "dpdk/dpdk-rx-tx-basics",
+  "title": "RX/TX Basics",
+  "description": "Most DPDK apps are built around a fast loop:",
+  "source": "@site/docs/dpdk/03-rx-tx-basics.md",
+  "sourceDirName": "dpdk",
+  "slug": "/dpdk/dpdk-rx-tx-basics",
+  "permalink": "/infra-for-ai/docs/dpdk/dpdk-rx-tx-basics",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/dpdk/03-rx-tx-basics.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 3,
+  "frontMatter": {
+    "id": "dpdk-rx-tx-basics",
+    "title": "RX/TX Basics",
+    "sidebar_label": "RX/TX Basics"
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "EAL & Mbufs",
+    "permalink": "/infra-for-ai/docs/dpdk/dpdk-eal-and-mbufs"
+  },
+  "next": {
+    "title": "Rings & Multicore",
+    "permalink": "/infra-for-ai/docs/dpdk/dpdk-rings-and-multicore"
+  }
+}

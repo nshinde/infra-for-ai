@@ -21,13 +21,44 @@
               "sidebar": "tutorialSidebar"
             },
             {
+              "id": "dpdk/dpdk-build-and-run-linux",
+              "path": "/infra-for-ai/docs/dpdk/dpdk-build-and-run-linux",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "dpdk/dpdk-debugging-and-profiling",
+              "path": "/infra-for-ai/docs/dpdk/dpdk-debugging-and-profiling",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "dpdk/dpdk-eal-and-mbufs",
+              "path": "/infra-for-ai/docs/dpdk/dpdk-eal-and-mbufs",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "dpdk/dpdk-intro",
+              "path": "/infra-for-ai/docs/dpdk/dpdk-intro",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "dpdk/dpdk-rings-and-multicore",
+              "path": "/infra-for-ai/docs/dpdk/dpdk-rings-and-multicore",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "dpdk/dpdk-rx-tx-basics",
+              "path": "/infra-for-ai/docs/dpdk/dpdk-rx-tx-basics",
+              "sidebar": "tutorialSidebar"
+            },
+            {
               "id": "gpu-networking/gpu-networking-101",
               "path": "/infra-for-ai/docs/gpu-networking/gpu-networking-101",
               "sidebar": "tutorialSidebar"
             },
             {
               "id": "intro",
-              "path": "/infra-for-ai/docs/intro"
+              "path": "/infra-for-ai/docs/intro",
+              "sidebar": "tutorialSidebar"
             },
             {
               "id": "intro/overview",
@@ -47,6 +78,36 @@
             {
               "id": "ml-infra/rdma-for-ml-infra",
               "path": "/infra-for-ai/docs/ml-infra/rdma-for-ml-infra",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "nccl/nccl-collectives",
+              "path": "/infra-for-ai/docs/nccl/nccl-collectives",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "nccl/nccl-communicators",
+              "path": "/infra-for-ai/docs/nccl/nccl-communicators",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "nccl/nccl-debugging",
+              "path": "/infra-for-ai/docs/nccl/nccl-debugging",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "nccl/nccl-install-and-env",
+              "path": "/infra-for-ai/docs/nccl/nccl-install-and-env",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "nccl/nccl-intro",
+              "path": "/infra-for-ai/docs/nccl/nccl-intro",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "nccl/nccl-topology-and-perf",
+              "path": "/infra-for-ai/docs/nccl/nccl-topology-and-perf",
               "sidebar": "tutorialSidebar"
             },
             {

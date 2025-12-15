@@ -5,7 +5,10 @@ const sidebars: SidebarsConfig = {
     {
       type: 'category',
       label: 'Introduction',
-      items: ['intro/overview'],
+      items: [
+        'intro/overview',
+        'intro',
+      ],
     },
     {
       type: 'category',
@@ -33,6 +36,30 @@ const sidebars: SidebarsConfig = {
         'observability/observability-overview',
         'observability/gpu-metrics',
         'observability/network-metrics',
+      ],
+    },
+    {
+      type: 'category',
+      label: 'NCCL',
+      items: [
+        'nccl/nccl-intro',
+        'nccl/nccl-install-and-env',
+        'nccl/nccl-communicators',
+        'nccl/nccl-collectives',
+        'nccl/nccl-topology-and-perf',
+        'nccl/nccl-debugging',
+      ],
+    },
+    {
+      type: 'category',
+      label: 'DPDK',
+      items: [
+        'dpdk/dpdk-intro',
+        'dpdk/dpdk-build-and-run-linux',
+        'dpdk/dpdk-eal-and-mbufs',
+        'dpdk/dpdk-rx-tx-basics',
+        'dpdk/dpdk-rings-and-multicore',
+        'dpdk/dpdk-debugging-and-profiling',
       ],
     },
     {
