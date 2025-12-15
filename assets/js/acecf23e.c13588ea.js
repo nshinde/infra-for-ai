@@ -1,0 +1,1 @@
+"use strict";(globalThis.webpackChunkinfra_for_ai=globalThis.webpackChunkinfra_for_ai||[]).push([[1903],{1912:a=>{a.exports=JSON.parse('{"blogBasePath":"/infra-for-ai/blog","blogTitle":"Blog","authorsListPath":"/infra-for-ai/blog/authors"}')}}]);

@@ -1,0 +1,1 @@
+"use strict";(globalThis.webpackChunkinfra_for_ai=globalThis.webpackChunkinfra_for_ai||[]).push([[7943],{8470:a=>{a.exports=JSON.parse('{"metadata":{"permalink":"/infra-for-ai/blog","page":1,"postsPerPage":10,"totalPages":1,"totalCount":4,"blogDescription":"Blog","blogTitle":"Blog"}}')}}]);
